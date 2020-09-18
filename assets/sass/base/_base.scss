@@ -2,10 +2,11 @@ html, body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  vertical-align: baseline;
 }
 
-*, *:before, *:after {
-  box-sizing: inherit;
-  padding: inherit;
-  margin: inherit;
+main {
+  max-width: 70rem;
+  margin: 0 auto;
+  padding: 2.25rem 1.5rem;
 }

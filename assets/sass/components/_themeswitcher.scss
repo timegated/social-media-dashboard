@@ -35,6 +35,10 @@
     width: 26px;
   }
 
+  em {
+    margin-right: 0.5rem;
+  }
+ 
   input:checked + .themeSwitch__slider {
     background-color: #000;
   }
@@ -46,6 +50,7 @@
   .themeSwitch__slider.themeSwitch__round {
     border-radius: 34px;
   }
+
   .themeSwitch__slider.themeSwitch__round:before {
     border-radius: 50%;
   }

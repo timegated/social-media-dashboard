@@ -3,6 +3,10 @@
 
 // Layout
 @import './layout/header';
+@import './layout/cardlayout';
+@import './layout/overview';
 
 // Components
 @import './components/themeSwitcher';
+@import './components/socialmediacard';
+@import './components/overviewcard';
