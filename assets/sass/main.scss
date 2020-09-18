@@ -1,4 +1,8 @@
-@import './base/_base.scss';
+// Base
+@import './base/base';
 
-@import './components/themeswitcher';
-@import './components/button';
+// Layout
+@import './layout/header';
+
+// Components
+@import './components/themeSwitcher';

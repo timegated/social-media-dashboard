@@ -10,15 +10,55 @@ html, body {
   margin: inherit;
 }
 
-.theme-switcher {
-  position: fixed;
-  top: 0;
-  right: 0;
-  margin-right: 10%;
+.main-header {
+  display: flex;
+  justify-content: space-around;
 }
 
-.button {
-  padding: 0.75rem;
+.themeSwitch__wrapper {
+  display: flex;
+  align-items: center;
+}
+.themeSwitch__wrapper .themeSwitch__label {
+  display: inline-block;
+  height: 34px;
+  position: relative;
+  width: 60px;
+}
+.themeSwitch__wrapper .themeSwitch__label input {
+  display: none;
+}
+.themeSwitch__wrapper .themeSwitch__slider {
+  background-color: #ccc;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: 0.4s;
+}
+.themeSwitch__wrapper .themeSwitch__slider:before {
+  background-color: #FFF;
+  bottom: 4px;
+  content: "";
+  height: 26px;
+  left: 4px;
+  position: absolute;
+  transition: 0.4s;
+  width: 26px;
+}
+.themeSwitch__wrapper input:checked + .themeSwitch__slider {
+  background-color: #000;
+}
+.themeSwitch__wrapper input:checked + .themeSwitch__slider:before {
+  transform: translateX(26px);
+}
+.themeSwitch__wrapper .themeSwitch__slider.themeSwitch__round {
+  border-radius: 34px;
+}
+.themeSwitch__wrapper .themeSwitch__slider.themeSwitch__round:before {
+  border-radius: 50%;
 }
 
 /*# sourceMappingURL=main.css.map */
