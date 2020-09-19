@@ -13,7 +13,12 @@ main {
 
 .main-header {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.main-header .themeSwitch__wrapper {
+  display: flex;
+  justify-content: space-between;
 }
 
 .main-content__cardlayout {
@@ -25,6 +30,7 @@ main {
 .main-content__overview {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  gap: 1.5rem 1.875rem;
 }
 
 .themeSwitch__wrapper {
@@ -41,7 +47,7 @@ main {
   display: none;
 }
 .themeSwitch__wrapper .themeSwitch__slider {
-  background-color: #ccc;
+  background: linear-gradient(45deg, #378fe6, #3eda82);
   bottom: 0;
   cursor: pointer;
   left: 0;
@@ -51,7 +57,7 @@ main {
   transition: 0.4s;
 }
 .themeSwitch__wrapper .themeSwitch__slider:before {
-  background-color: #FFF;
+  background: #000;
   bottom: 4px;
   content: "";
   height: 26px;
@@ -64,7 +70,7 @@ main {
   margin-right: 0.5rem;
 }
 .themeSwitch__wrapper input:checked + .themeSwitch__slider {
-  background-color: #000;
+  background: #aeb3cb;
 }
 .themeSwitch__wrapper input:checked + .themeSwitch__slider:before {
   transform: translateX(26px);

@@ -14,7 +14,7 @@
   }
 
   .themeSwitch__slider {
-    background-color: #ccc;
+    background: $dark-theme-toggle;
     bottom: 0;
     cursor: pointer;
     left: 0;
@@ -25,7 +25,7 @@
   }
 
   .themeSwitch__slider:before {
-    background-color: #FFF;
+    background:#000;
     bottom: 4px;
     content: "";
     height: 26px;
@@ -40,7 +40,7 @@
   }
  
   input:checked + .themeSwitch__slider {
-    background-color: #000;
+    background: $light-theme-toggle;
   }
 
   input:checked + .themeSwitch__slider:before {
