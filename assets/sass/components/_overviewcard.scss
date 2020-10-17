@@ -1,35 +1,57 @@
-.overview__card {
-  padding: 1.5rem;
-  background: lighten($light-theme-toggle, 20);
+.main-content__overview {
 
-  &:hover {
-    background-color: lighten($light-theme-toggle, 15);
-    transition: background-color 0.2s ease-in;
+  .overview__header {
+    color: darken($light-theme-toggle, 20);
   }
 
 
+  .overview__card {
+    padding: 0 2rem 0 2rem;
+    background: lighten($light-theme-toggle, 20);
   
-  .overview__title {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  .overview__number {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-size: 3rem;
-     .overview__percent {
-      font-size: 1rem;
+    &:hover {
+      background-color: lighten($light-theme-toggle, 15);
+      transition: background-color 0.2s ease-in;
     }
+  
+  
     
-    & .up {
-      color: $primary-lime-green;
-    }
+    .overview__title {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 1rem 0 1rem 0;
 
-    & .down {
-      color: $primary-bright-red;
+      & p {
+        font-size: 1.2rem;
+        margin: 0;
+        padding: 1rem;
+        color: darken($light-theme-toggle, 20);
+      }
+    }
+  
+    .overview__number {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 3rem;
+      font-weight: 600;
+      & p { 
+        margin: 0;
+        padding: 1rem;
+      }
+
+       .overview__percent {
+        font-size: 1rem;
+      }
+  
+      & .up {
+        color: $primary-lime-green;
+      }
+  
+      & .down {
+        color: $primary-bright-red;
+      }
     }
   }
 }

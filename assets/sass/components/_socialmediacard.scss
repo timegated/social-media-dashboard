@@ -36,18 +36,31 @@
       margin-right: 0.5rem;
     }
   }
-  
-  .social-media__followers--number {
-    font-size: 4rem;
-    font-weight: bold;
-    margin: 0;
-    padding: 0;
-  }
 
-  .social-media__followers--copy {
-    margin: 0;
-    letter-spacing: .2rem;
-    text-transform: uppercase;
-    color: $light-theme-toggle;
+  .social-media__followers {
+    .social-media__followers--number {
+      font-size: 4rem;
+      font-weight: bold;
+      margin: 0;
+      padding: 0;
+    }
+  
+    .social-media__followers--copy {
+      margin: 0;
+      letter-spacing: .2rem;
+      text-transform: uppercase;
+      color: $light-theme-toggle;
+    }
+  
+    .social-media__followers--new {
+      font-size: 1.2rem;
+    }
+    & .up {
+      color: $primary-lime-green;
+    }
+    & .down {
+      color: $primary-bright-red;
+    }
   }
+ 
 }

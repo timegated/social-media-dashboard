@@ -125,45 +125,69 @@ main {
 .social-media__card .social-media__username span {
   margin-right: 0.5rem;
 }
-.social-media__card .social-media__followers--number {
+.social-media__card .social-media__followers .social-media__followers--number {
   font-size: 4rem;
   font-weight: bold;
   margin: 0;
   padding: 0;
 }
-.social-media__card .social-media__followers--copy {
+.social-media__card .social-media__followers .social-media__followers--copy {
   margin: 0;
   letter-spacing: 0.2rem;
   text-transform: uppercase;
   color: #aeb3cb;
 }
+.social-media__card .social-media__followers .social-media__followers--new {
+  font-size: 1.2rem;
+}
+.social-media__card .social-media__followers .up {
+  color: #1db489;
+}
+.social-media__card .social-media__followers .down {
+  color: #dc414c;
+}
 
-.overview__card {
-  padding: 1.5rem;
+.main-content__overview .overview__header {
+  color: #7078a4;
+}
+.main-content__overview .overview__card {
+  padding: 0 2rem 0 2rem;
   background: #ecedf3;
 }
-.overview__card:hover {
+.main-content__overview .overview__card:hover {
   background-color: #dddfe9;
   transition: background-color 0.2s ease-in;
 }
-.overview__card .overview__title {
+.main-content__overview .overview__card .overview__title {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin: 1rem 0 1rem 0;
 }
-.overview__card .overview__number {
+.main-content__overview .overview__card .overview__title p {
+  font-size: 1.2rem;
+  margin: 0;
+  padding: 1rem;
+  color: #7078a4;
+}
+.main-content__overview .overview__card .overview__number {
   display: flex;
   align-items: center;
   justify-content: space-between;
   font-size: 3rem;
+  font-weight: 600;
 }
-.overview__card .overview__number .overview__percent {
+.main-content__overview .overview__card .overview__number p {
+  margin: 0;
+  padding: 1rem;
+}
+.main-content__overview .overview__card .overview__number .overview__percent {
   font-size: 1rem;
 }
-.overview__card .overview__number .up {
+.main-content__overview .overview__card .overview__number .up {
   color: #1db489;
 }
-.overview__card .overview__number .down {
+.main-content__overview .overview__card .overview__number .down {
   color: #dc414c;
 }
 
