@@ -6,25 +6,25 @@ html, body {
 }
 
 main {
-  max-width: 70rem;
+  max-width: 90rem;
   margin: 0 auto;
   padding: 2.25rem 1.5rem;
 }
 
 .main-header {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-around;
 }
 .main-header .themeSwitch__wrapper {
   display: flex;
-  justify-content: space-between;
 }
 
 .main-content__cardlayout {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
-  gap: 1.5rem 1.875rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem 1rem;
 }
 
 .main-content__overview {
@@ -83,12 +83,48 @@ main {
 }
 
 .social-media__card {
+  padding: 3rem;
   text-align: center;
+  background: #ecedf3;
+}
+.social-media__card:hover {
+  background-color: #dddfe9;
+  transition: background-color 0.2s ease-in;
+}
+.social-media__card.facebook {
+  border-top: 5px solid #198ff5;
+}
+.social-media__card.twitter {
+  border-top: 5px solid #1ca0f2;
+}
+.social-media__card.instagram {
+  border-top: 5px solid;
+  border-image-slice: 1;
+  border-width: 5px;
+  border-image-source: linear-gradient(45deg, #fdc468, #df4996);
+}
+.social-media__card.youtube {
+  border-top: 5px solid #c4032a;
 }
 .social-media__card .social-media__username {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.social-media__card .social-media__username span {
+  margin-right: 0.5rem;
+}
+.social-media__card .social-media__followers--number {
+  font-size: 4rem;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+.social-media__card .social-media__followers--copy {
+  margin: 0;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  color: #aeb3cb;
 }
 
 .overview__card {

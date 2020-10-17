@@ -1,9 +1,53 @@
 .social-media__card {
+  padding: 3rem;
   text-align: center;
+  background: lighten($light-theme-toggle, 20);
+
+  &:hover {
+    background-color: lighten($light-theme-toggle, 15);
+    transition: background-color 0.2s ease-in;
+  }
+
+  &.facebook {
+    border-top: 5px solid $primary-facebook;
+  }
+
+  &.twitter {
+    border-top: 5px solid $primary-twitter;
+  }
+
+  &.instagram {
+    border-top: 5px solid;
+    border-image-slice: 1;
+    border-width: 5px;
+    border-image-source: $primary-instagram;
+  }
+
+  &.youtube {
+    border-top: 5px solid $primary-youtube;
+  }
 
   .social-media__username {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    & span {
+      margin-right: 0.5rem;
+    }
+  }
+  
+  .social-media__followers--number {
+    font-size: 4rem;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+  }
+
+  .social-media__followers--copy {
+    margin: 0;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+    color: $light-theme-toggle;
   }
 }
