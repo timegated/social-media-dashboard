@@ -1,25 +1,41 @@
 .isLight {
-  background: #FFFFFF;
+  background: $light-theme-1;
 
+  .main-header {
+    .main-header__content {
+      .main-header__title {
+        color: $light-theme-5;
+      }
+      .main-header__followers {
+        color: $light-theme-5;
+      }
+    }
+
+    .themeSwitch__wrapper {
+      & em {
+        color: $light-theme-5;
+      }
+    }
+  }
   .social-media__card {
-    background: lighten($light-theme-toggle, 20);
+    background: $light-theme-2;
     
   
     &:hover {
-      background-color: lighten($light-theme-toggle, 15);
+      background-color: $light-theme-3;
       transition: background-color 0.2s ease-in;
     }
   
    
     .social-media__username {
       & h3 {
-        color: darken($light-theme-toggle, 20);
+        color: $light-theme-4;
       }
     }
   
     .social-media__followers {
       .social-media__followers--copy {
-        color: $light-theme-toggle;
+        color: lighten($light-theme-4, 20);
       }
     }
    
@@ -27,16 +43,16 @@
   .main-content__overview {
 
     .overview__header {
-      color: darken($light-theme-toggle, 20);
+      color: $light-theme-4;
     }
   
   
     .overview__card {
-      background: lighten($light-theme-toggle, 20);
+      background: $light-theme-2;
      
       
       &:hover {
-        background-color: lighten($light-theme-toggle, 15);
+        background-color: $light-theme-3;
         transition: background-color 0.2s ease-in;
       }
     
@@ -44,12 +60,12 @@
       
       .overview__title {
         & p {
-          color: darken($light-theme-toggle, 20);
+          color: $light-theme-4;
         }
       }
     
       .overview__number {
-       
+        color: $light-theme-5
       }
     }
   }
@@ -57,35 +73,35 @@
 }
 
 .isDark {
-  background: #2C2C2C;
+  background: $dark-theme-1;
   .main-header {
    
   
     .main-header__title {
-      
+      color: $dark-theme-5;
     }
   
     .main-header__followers {
-      
+      color: $dark-theme-5;
     }
   
     .themeSwitch__wrapper {
-    
+      color: $dark-theme-5;
     }
   }
   .social-media__card {
-    background: lighten($light-theme-toggle, 20);
+    background: lighten($dark-theme-3, 5);
     
   
     &:hover {
-      background-color: lighten($light-theme-toggle, 15);
+      background-color: darken($dark-theme-4, 10);
       transition: background-color 0.2s ease-in;
     }
   
    
     .social-media__username {
       & h3 {
-        color: darken($light-theme-toggle, 20);
+        color: $dark-theme-4;
       }
     }
   
@@ -94,21 +110,23 @@
         color: $light-theme-toggle;
       }
     }
-   
+   .social-media__followers--number {
+     color: $dark-theme-5;
+   }
   }
   .main-content__overview {
 
     .overview__header {
-      color: darken($light-theme-toggle, 20);
+      color: $dark-theme-5;
     }
   
   
     .overview__card {
-      background: lighten($light-theme-toggle, 20);
+      background: lighten($dark-theme-3, 5);
      
       
       &:hover {
-        background-color: lighten($light-theme-toggle, 15);
+        background-color: darken($dark-theme-4, 10);
         transition: background-color 0.2s ease-in;
       }
     
@@ -116,12 +134,12 @@
       
       .overview__title {
         & p {
-          color: darken($light-theme-toggle, 20);
+          color: $dark-theme-4;
         }
       }
     
       .overview__number {
-       
+       color: $dark-theme-5;
       }
     }
   }

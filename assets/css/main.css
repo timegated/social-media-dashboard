@@ -12,63 +12,92 @@ main {
 }
 
 .isLight {
-  background: #FFFFFF;
+  background: white;
+}
+.isLight .main-header .main-header__content .main-header__title {
+  color: #1e202a;
+}
+.isLight .main-header .main-header__content .main-header__followers {
+  color: #1e202a;
+}
+.isLight .main-header .themeSwitch__wrapper em {
+  color: #1e202a;
 }
 .isLight .social-media__card {
-  background: #ecedf3;
+  background: #f5f7ff;
 }
 .isLight .social-media__card:hover {
-  background-color: #dddfe9;
+  background-color: #f0f2fa;
   transition: background-color 0.2s ease-in;
 }
 .isLight .social-media__card .social-media__username h3 {
-  color: #7078a4;
+  color: #63687e;
 }
 .isLight .social-media__card .social-media__followers .social-media__followers--copy {
-  color: #aeb3cb;
+  color: #989dae;
 }
 .isLight .main-content__overview .overview__header {
-  color: #7078a4;
+  color: #63687e;
 }
 .isLight .main-content__overview .overview__card {
-  background: #ecedf3;
+  background: #f5f7ff;
 }
 .isLight .main-content__overview .overview__card:hover {
-  background-color: #dddfe9;
+  background-color: #f0f2fa;
   transition: background-color 0.2s ease-in;
 }
 .isLight .main-content__overview .overview__card .overview__title p {
-  color: #7078a4;
+  color: #63687e;
 }
+.isLight .main-content__overview .overview__card .overview__number {
+  color: #1e202a;
+}
+
 .isDark {
-  background: #2C2C2C;
+  background: #1e202a;
+}
+.isDark .main-header .main-header__title {
+  color: white;
+}
+.isDark .main-header .main-header__followers {
+  color: white;
+}
+.isDark .main-header .themeSwitch__wrapper {
+  color: white;
 }
 .isDark .social-media__card {
-  background: #ecedf3;
+  background: #2e3552;
 }
 .isDark .social-media__card:hover {
-  background-color: #dddfe9;
+  background-color: #6978b5;
   transition: background-color 0.2s ease-in;
 }
 .isDark .social-media__card .social-media__username h3 {
-  color: #7078a4;
+  color: #8b97c6;
 }
 .isDark .social-media__card .social-media__followers .social-media__followers--copy {
   color: #aeb3cb;
 }
+.isDark .social-media__card .social-media__followers--number {
+  color: white;
+}
 .isDark .main-content__overview .overview__header {
-  color: #7078a4;
+  color: white;
 }
 .isDark .main-content__overview .overview__card {
-  background: #ecedf3;
+  background: #2e3552;
 }
 .isDark .main-content__overview .overview__card:hover {
-  background-color: #dddfe9;
+  background-color: #6978b5;
   transition: background-color 0.2s ease-in;
 }
 .isDark .main-content__overview .overview__card .overview__title p {
-  color: #7078a4;
+  color: #8b97c6;
 }
+.isDark .main-content__overview .overview__card .overview__number {
+  color: white;
+}
+
 .main-header {
   display: flex;
   flex-direction: row;
@@ -214,6 +243,7 @@ main {
   font-size: 1.2rem;
   margin: 0;
   padding: 1rem;
+  font-weight: 500;
 }
 .main-content__overview .overview__card .overview__number {
   display: flex;
