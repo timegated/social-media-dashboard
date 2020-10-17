@@ -11,6 +11,64 @@ main {
   padding: 2.25rem 1.5rem;
 }
 
+.isLight {
+  background: #FFFFFF;
+}
+.isLight .social-media__card {
+  background: #ecedf3;
+}
+.isLight .social-media__card:hover {
+  background-color: #dddfe9;
+  transition: background-color 0.2s ease-in;
+}
+.isLight .social-media__card .social-media__username h3 {
+  color: #7078a4;
+}
+.isLight .social-media__card .social-media__followers .social-media__followers--copy {
+  color: #aeb3cb;
+}
+.isLight .main-content__overview .overview__header {
+  color: #7078a4;
+}
+.isLight .main-content__overview .overview__card {
+  background: #ecedf3;
+}
+.isLight .main-content__overview .overview__card:hover {
+  background-color: #dddfe9;
+  transition: background-color 0.2s ease-in;
+}
+.isLight .main-content__overview .overview__card .overview__title p {
+  color: #7078a4;
+}
+.isDark {
+  background: #2C2C2C;
+}
+.isDark .social-media__card {
+  background: #ecedf3;
+}
+.isDark .social-media__card:hover {
+  background-color: #dddfe9;
+  transition: background-color 0.2s ease-in;
+}
+.isDark .social-media__card .social-media__username h3 {
+  color: #7078a4;
+}
+.isDark .social-media__card .social-media__followers .social-media__followers--copy {
+  color: #aeb3cb;
+}
+.isDark .main-content__overview .overview__header {
+  color: #7078a4;
+}
+.isDark .main-content__overview .overview__card {
+  background: #ecedf3;
+}
+.isDark .main-content__overview .overview__card:hover {
+  background-color: #dddfe9;
+  transition: background-color 0.2s ease-in;
+}
+.isDark .main-content__overview .overview__card .overview__title p {
+  color: #7078a4;
+}
 .main-header {
   display: flex;
   flex-direction: row;
@@ -96,11 +154,7 @@ main {
 .social-media__card {
   padding: 3rem;
   text-align: center;
-  background: #ecedf3;
-}
-.social-media__card:hover {
-  background-color: #dddfe9;
-  transition: background-color 0.2s ease-in;
+  border-radius: 5px;
 }
 .social-media__card.facebook {
   border-top: 5px solid #198ff5;
@@ -135,7 +189,6 @@ main {
   margin: 0;
   letter-spacing: 0.2rem;
   text-transform: uppercase;
-  color: #aeb3cb;
 }
 .social-media__card .social-media__followers .social-media__followers--new {
   font-size: 1.2rem;
@@ -147,16 +200,9 @@ main {
   color: #dc414c;
 }
 
-.main-content__overview .overview__header {
-  color: #7078a4;
-}
 .main-content__overview .overview__card {
   padding: 0 2rem 0 2rem;
-  background: #ecedf3;
-}
-.main-content__overview .overview__card:hover {
-  background-color: #dddfe9;
-  transition: background-color 0.2s ease-in;
+  border-radius: 5px;
 }
 .main-content__overview .overview__card .overview__title {
   display: flex;
@@ -168,7 +214,6 @@ main {
   font-size: 1.2rem;
   margin: 0;
   padding: 1rem;
-  color: #7078a4;
 }
 .main-content__overview .overview__card .overview__number {
   display: flex;

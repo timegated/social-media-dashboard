@@ -1,12 +1,9 @@
 .social-media__card {
   padding: 3rem;
   text-align: center;
-  background: lighten($light-theme-toggle, 20);
+  border-radius: 5px;
 
-  &:hover {
-    background-color: lighten($light-theme-toggle, 15);
-    transition: background-color 0.2s ease-in;
-  }
+  
 
   &.facebook {
     border-top: 5px solid $primary-facebook;
@@ -31,7 +28,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
+ 
     & span {
       margin-right: 0.5rem;
     }
@@ -49,7 +46,6 @@
       margin: 0;
       letter-spacing: .2rem;
       text-transform: uppercase;
-      color: $light-theme-toggle;
     }
   
     .social-media__followers--new {

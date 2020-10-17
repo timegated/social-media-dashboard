@@ -1,0 +1,128 @@
+.isLight {
+  background: #FFFFFF;
+
+  .social-media__card {
+    background: lighten($light-theme-toggle, 20);
+    
+  
+    &:hover {
+      background-color: lighten($light-theme-toggle, 15);
+      transition: background-color 0.2s ease-in;
+    }
+  
+   
+    .social-media__username {
+      & h3 {
+        color: darken($light-theme-toggle, 20);
+      }
+    }
+  
+    .social-media__followers {
+      .social-media__followers--copy {
+        color: $light-theme-toggle;
+      }
+    }
+   
+  }
+  .main-content__overview {
+
+    .overview__header {
+      color: darken($light-theme-toggle, 20);
+    }
+  
+  
+    .overview__card {
+      background: lighten($light-theme-toggle, 20);
+     
+      
+      &:hover {
+        background-color: lighten($light-theme-toggle, 15);
+        transition: background-color 0.2s ease-in;
+      }
+    
+    
+      
+      .overview__title {
+        & p {
+          color: darken($light-theme-toggle, 20);
+        }
+      }
+    
+      .overview__number {
+       
+      }
+    }
+  }
+
+}
+
+.isDark {
+  background: #2C2C2C;
+  .main-header {
+   
+  
+    .main-header__title {
+      
+    }
+  
+    .main-header__followers {
+      
+    }
+  
+    .themeSwitch__wrapper {
+    
+    }
+  }
+  .social-media__card {
+    background: lighten($light-theme-toggle, 20);
+    
+  
+    &:hover {
+      background-color: lighten($light-theme-toggle, 15);
+      transition: background-color 0.2s ease-in;
+    }
+  
+   
+    .social-media__username {
+      & h3 {
+        color: darken($light-theme-toggle, 20);
+      }
+    }
+  
+    .social-media__followers {
+      .social-media__followers--copy {
+        color: $light-theme-toggle;
+      }
+    }
+   
+  }
+  .main-content__overview {
+
+    .overview__header {
+      color: darken($light-theme-toggle, 20);
+    }
+  
+  
+    .overview__card {
+      background: lighten($light-theme-toggle, 20);
+     
+      
+      &:hover {
+        background-color: lighten($light-theme-toggle, 15);
+        transition: background-color 0.2s ease-in;
+      }
+    
+    
+      
+      .overview__title {
+        & p {
+          color: darken($light-theme-toggle, 20);
+        }
+      }
+    
+      .overview__number {
+       
+      }
+    }
+  }
+}

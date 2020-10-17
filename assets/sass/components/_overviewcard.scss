@@ -1,19 +1,8 @@
 .main-content__overview {
 
-  .overview__header {
-    color: darken($light-theme-toggle, 20);
-  }
-
-
   .overview__card {
     padding: 0 2rem 0 2rem;
-    background: lighten($light-theme-toggle, 20);
-  
-    &:hover {
-      background-color: lighten($light-theme-toggle, 15);
-      transition: background-color 0.2s ease-in;
-    }
-  
+    border-radius: 5px;
   
     
     .overview__title {
@@ -26,7 +15,6 @@
         font-size: 1.2rem;
         margin: 0;
         padding: 1rem;
-        color: darken($light-theme-toggle, 20);
       }
     }
   
