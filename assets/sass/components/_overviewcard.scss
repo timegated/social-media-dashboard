@@ -1,18 +1,35 @@
 .overview__card {
   padding: 1.5rem;
+  background: lighten($light-theme-toggle, 20);
 
-  .overview__header {
-    grid-column: 1 / -1;
+  &:hover {
+    background-color: lighten($light-theme-toggle, 15);
+    transition: background-color 0.2s ease-in;
   }
+
+
   
   .overview__title {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
+
   .overview__number {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    font-size: 3rem;
+     .overview__percent {
+      font-size: 1rem;
+    }
+    
+    & .up {
+      color: $primary-lime-green;
+    }
+
+    & .down {
+      color: $primary-bright-red;
+    }
   }
 }
